@@ -1,40 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Cat App
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This a simple React app that serves as a practical exercise to delve into the fundamentals of React component development and styling with Tailwind CSS.   
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Setup
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- In your system terminal make sure you are in the directory that you want your Next app to go. To see where you are you can run:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+        pwd
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- If you need to navigate somewhere else, to see the files in your current directory, you can run:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+        ls
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- You can move into the correct directory by running:
 
-## Learn More
+        cd <desired directory>
 
-To learn more about Next.js, take a look at the following resources:
+- Create a New Next.js Application
+    * Run - NOTE: if we run w/out a project name, the terminal will ask us to enter a project name. 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+            npx create-next-app@latest
+    
+- You will then be asked a series of questions...
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    ![terminal questions](<nextQuestions.png>)
 
-## Deploy on Vercel
+- Navigate to your new project by running:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+        cd cat-app
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Then you can open a VScode window by running: 
+
+        code .
+
+- Create a new repository on Github. NOTE: don't select add README or .gitignore
+    * Quick set up will pop up...Run the code that says Add repo to existing repo on the command-line. 
+
+- Add your Next app to your new repository by running this in bash terminal:
+
+        git remote add origin https://github.com/yourusername/your-repository.git
+        git branch -M main
+        git push -u origin main
+
+## Plan
+
+![mock up](<mockUp.png>)
