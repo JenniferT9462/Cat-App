@@ -35,6 +35,14 @@ This a simple React app that serves as a practical exercise to delve into the fu
 
         code .
 
+- To install dependencies run:
+
+        npm install
+
+- To open the deployment server run:
+
+        npm run dev
+
 - Create a new repository on Github. NOTE: don't select add README or .gitignore
     * Quick set up will pop up...Run the code that says Add repo to existing repo on the command-line. 
 
