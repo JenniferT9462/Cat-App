@@ -43,6 +43,8 @@ This a simple React app that serves as a practical exercise to delve into the fu
 
         npm run dev
 
+- Open your browser and navigate to http://localhost:3000 to view your home page and see the changes you make in        real-time. NOTE: you can ctrl+click(windows) the link directly from your terminal in VScode.
+
 - Create a new repository on Github. NOTE: don't select add README or .gitignore
     * Quick set up will pop up...Run the code that says Add repo to existing repo on the command-line. 
 
