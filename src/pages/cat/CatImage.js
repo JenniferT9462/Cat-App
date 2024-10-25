@@ -8,7 +8,7 @@ export default function CatImage(props) {
             <img className="rounded-full" width="340" src={props.image_link} alt="Cat" />
           </div>
         </div>
-        <h4 className="text-center text-xl font-bold">Hi I'm a {props.name} cat!</h4>
+        <h4 className="text-center text-xl font-bold">Hi I&apos;m a {props.name} cat!</h4>
       </div>
       
     );
