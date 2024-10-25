@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 // src/pages/index.js
 export default function Home() {
   return (
