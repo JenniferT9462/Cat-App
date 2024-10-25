@@ -6,10 +6,9 @@ export default function CatImage(props) {
         <div className=" flex justify-center">
           <div >
             <img className="rounded-full" width="340" src={props.image_link} alt="Cat" />
+            <h4 className="text-center text-xl font-bold">Hi I&apos;m a {props.name}!</h4>
           </div>
         </div>
-        <h4 className="text-center text-xl font-bold">Hi I&apos;m a {props.name}!</h4>
       </div>
-      
     );
   }
