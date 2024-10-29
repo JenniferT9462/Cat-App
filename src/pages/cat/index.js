@@ -1,5 +1,5 @@
 // src/pages/cat/index.js
-import catData from '/cat-data.json';
+// import catData from '/cat-data.json';
 import Header from './Header';
 import CatImage from './CatImage';
 import CatDetails from './CatDetails';
@@ -43,4 +43,4 @@ export default function Cat() {
   }
 
 
-console.log(catData);
+// console.log(catData);
