@@ -9,6 +9,14 @@ export default function MoreCats() {
     const [error, setError] = useState(null); // Track error state
     
     async function fetchCats() {
+
+        const url = "https://cats-cats-cats-demo.deno.dev/cats/co?multi_cat=true"
+        // const url = "/api/cats"
+        const result = await fetch(url);
+        const data = await result.json();
+        console.log(data);
+        setCats(data);
+
         setIsLoading(true); // Set loading state to true before fetching
         setError(null); // Clear any previous errors
 
@@ -28,7 +36,7 @@ export default function MoreCats() {
         } finally {
             setIsLoading(false); // Set loading state to false after fetching (regardless of success or failure)
         }
-        
+
     }
      //Run once on start with second args []
      useEffect(() => {
