@@ -11,7 +11,8 @@ export default function Cat() {
     const [cat, setCat] = useState({});
     //Step 1: Put a function INSIDE your component that fetches
     async function fetchCat() {
-        const url = "https://cats-cats-cats-demo.deno.dev/cats/siamese";
+        // const url = "https://cats-cats-cats-demo.deno.dev/cats/siamese";
+        const url = "/api/cats"
         const result = await fetch(url);
         const data = await result.json();
         console.log(data);
@@ -29,7 +30,7 @@ export default function Cat() {
             <Header />
             <CatImage 
                 name={cat.name}
-                image_link={cat.image_link} />
+                image_link={cat.img} />
             <CatDetails 
                 origin={cat.origin}
                 length={cat.length}
