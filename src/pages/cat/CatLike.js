@@ -1,4 +1,5 @@
 // Import useState so I can add a onClick for my button
+import Image from "next/image";
 import { useState } from "react"
 
 export default function CatLike() {
@@ -13,7 +14,7 @@ export default function CatLike() {
         <div className="flex justify-center">
             <div className=" border-2 border-amber-600 m-12 p-4">
                 {/* Show heart when the isLiked state is true */}
-                {isLiked && <div><img src="/heart.png"/></div>}
+                {isLiked && <div><Image src="/heart.png" alt="Heart"/></div>}
                 <p className="text-black">Click the button if you like cats!</p>
                 <button
                     // Add handleLikeClick on the button
