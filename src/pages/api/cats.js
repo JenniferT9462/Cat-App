@@ -9,7 +9,7 @@ async function fetchNinjasCats(searchCat) {
     return data;
 }
 
-// pages/api/cats.js
+
 export default async function handler(req, res) {
     const query = req.query;
     console.log(query);
