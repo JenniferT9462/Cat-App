@@ -2,6 +2,7 @@ const username = process.env.RAVELRY_USERNAME;
 const password = process.env.RAVELRY_PASSWORD;
 
 const headers = new Headers();
+//Set headers and convert binary string to ASCII w/btoa() function
 headers.set('Authorization', 'Basic ' + btoa(username + ':' + password));
 
 async function fetchFromRavelry(queryPattern) {
