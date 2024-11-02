@@ -14,7 +14,7 @@ export default function CatLike() {
         <div className="flex justify-center">
             <div className=" border-2 border-amber-600 m-12 p-4">
                 {/* Show heart when the isLiked state is true */}
-                {isLiked && <div><Image src="/heart.png" alt="Heart"/></div>}
+                {isLiked && <div><Image src="/heart.png" alt="Heart" width={100} height={100}/></div>}
                 <p className="text-black">Click the button if you like cats!</p>
                 <button
                     // Add handleLikeClick on the button
