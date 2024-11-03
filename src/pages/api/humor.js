@@ -14,5 +14,6 @@ export default async function handler(req, res) {
     const jokes = await fetchJokeFromHumor();
     console.log(jokes);
 
-    res.status(200).json({message: jokes})
+    
+    res.status(200).json({message: jokes});
 }
