@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import CatCard from "./CatCard";
-import CatsHeader from "./CatsHeader";
+import CatCard from "../../components/CatCard";
+import CatsHeader from "../../components/CatsHeader";
 
 
 export default function MoreCats() {

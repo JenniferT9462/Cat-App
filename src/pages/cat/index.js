@@ -1,9 +1,9 @@
 // src/pages/cat/index.js
 // import catData from '/cat-data.json';
-import Header from './Header';
-import CatImage from './CatImage';
-import CatDetails from './CatDetails';
-import CatLike from './CatLike';
+import Header from '../../components/Header';
+import CatImage from '../../components/CatImage';
+import CatDetails from '../../components/CatDetails';
+import CatLike from '../../components/CatLike';
 import { useEffect, useState } from 'react';
 
 export default function Cat() {
