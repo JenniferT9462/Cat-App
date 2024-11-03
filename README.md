@@ -1,8 +1,14 @@
-# Cat App
+# Cat App  
+
+**Deployed Link:**  <https://cat-app-tawny-iota.vercel.app/>
 
 ## Overview
 
 This a simple React app that serves as a practical exercise to delve into the fundamentals of React component development and styling with Tailwind CSS.   
+
+### API Proxies
+
+This project aims to significantly expand the functionality and data richness of the existing "Cats, Cats, Cats" application. By integrating new data sources through a proxy server and adding new endpoints, we will enhance the user experience and demonstrate advanced skills in API utilization and server-side development.
 
 ## Setup
 
@@ -57,3 +63,79 @@ This a simple React app that serves as a practical exercise to delve into the fu
 ## Plan
 
 ![mock up](<mockUp.png>)
+
+## Endpoints
+
+### `api/cats`
+
+**Description:** Retrieve cat details based on a search query.
+
+**Response**
+```json
+ {
+    "name": "Colorpoint Shorthair",
+    "origin": "England",
+    "length": "Small to medium",
+    "img":   "https://api-ninjas.com/images/cats/colorpoint_shorthair.jpg"
+  }
+```
+#### Screenshot of Request on Postman
+
+![Cats API](<./public/catsApi.png>)
+
+### `/api/pokemon`
+
+**Description:** Retrieve pokemon details based on a search query.
+
+**Response**
+```json
+{
+    "pokemonName": "luxio",
+    "pokemonCry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/404.ogg",
+    "pokemonImgSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/404.png",
+    "firstAbility": "rivalry"
+}
+```
+#### Screenshot of Request on Postman
+
+![Pokemon API](<./public/pokemonApi.png>)
+
+### `/api/trivia`
+
+**Description:** Retrieve three trivia questions about animals.
+
+**Response**
+```json
+{
+        "trivia": "Cashmere is the wool from which kind of animal?",
+        "answer": "Goat"
+    },
+    {
+        "trivia": "What is the name of the family that the domestic cat is a member of?",
+        "answer": "Felidae"
+    },
+    {
+        "trivia": "What is the name for a male bee that comes from an unfertilized egg?",
+        "answer": "Drone"
+    }
+```
+#### Screenshot of Request on Postman
+
+![Trivia API](<./public/triviaApi.png>)
+
+### `/api/ravelry`
+
+**Description:** Retrieve pattern details based on search query.
+
+**Response**
+```json
+{
+    "name": "Halloween Knit Hat",
+    "image": "https://images4-g.ravelrycache.com/uploads/hagilb/643624072/halloween-front_medium.jpg",
+    "designer": "Holly G Hats"
+}
+```
+#### Screenshot of Request on Postman
+
+![Ravelry API](<./public/ravelryApi.png>)
+
