@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import CatCard from "../../components/CatCard";
-import CatsHeader from "../../components/CatsHeader";
+import Header from "../../components/Header";
 
 
 export default function MoreCats() {
@@ -36,7 +36,7 @@ export default function MoreCats() {
 
         return (
             <div className='bg-amber-100'>
-                    <CatsHeader/>
+                <Header/>
                 <h1 className="text-4xl text-center text-amber-600">Look at All These Cats!</h1>
                 <div className="grid grid-cols-2 gap-4">
                     {moreCats.map((cat, index) => (

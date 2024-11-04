@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Image from "next/image";
+import Header from '@/components/Header';
 
 export default function Pokemon() {
     const [pokemonData, setPokemonData] = useState(null);
@@ -23,6 +24,7 @@ export default function Pokemon() {
 
     return (
         <div>
+            <Header/>
             <h1>Pokemon Data</h1>
             <p>Name: {pokemonData.pokemonName}</p>
             <Image 

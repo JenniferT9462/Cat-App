@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 // import Image from "next/image";
+import Header from '@/components/Header';
 
 export default function Trivia() {
     const[triviaData, setTriviaData] = useState(null);
@@ -23,6 +24,7 @@ export default function Trivia() {
 
     return (
         <div>
+            <Header/>
             <h1>Animal Trivia!</h1>
             {triviaData.map((question, index) =>(
                 <div key={index}>

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Image from "next/image";
+import Header from '@/components/Header';
 
 export default function Ravelry() {
     const [patternData, setPatternData] = useState(null);
@@ -23,6 +24,7 @@ export default function Ravelry() {
 
     return (
         <div>
+            <Header/>
           <h1>Knitting Pattern Details</h1>
            <p>Name: {patternData.name}</p>
            <Image
