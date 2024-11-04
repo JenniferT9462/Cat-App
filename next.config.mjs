@@ -5,7 +5,9 @@ const nextConfig = {
     domains: 
       ['api-ninjas.com'], 
     domains:
-      ['raw.githubusercontent.com']// Add the hostname here
+      ['raw.githubusercontent.com'],
+    domains: 
+      ['images4-g.ravelrycache.com', 'images4-f.ravelrycache.com'],// Add the hostname here
   }
 };
 
