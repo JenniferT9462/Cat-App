@@ -13,18 +13,25 @@ async function fetchNinjasCats(searchCat) {
 export default async function handler(req, res) {
     const query = req.query;
     console.log(query);
-    const cats = await fetchNinjasCats("co");
-    console.log(cats);
+    try {
+        const cats = await fetchNinjasCats("co");
+        console.log(cats);
 
-    const responseData = {};
-    if (cats.length > 0) {
-        responseData.name = cats[0].name;
-        responseData.origin = cats[0].origin;
-        responseData.length = cats[0].length;
-        responseData.img = cats[0].image_link;
+        const responseData = {};
+        if (cats.length > 0) {
+            responseData.name = cats[0].name;
+            responseData.origin = cats[0].origin;
+            responseData.length = cats[0].length;
+            responseData.image = cats[0].image_link;
     } else {
         responseData.error = "No Cats Found!";
     }
-    // Handle the request and send a response
-    res.status(200).json(responseData);
+     // Handle the request and send a response
+     res.status(200).json(responseData);
+    
+    } catch (error) {
+        res.status(500).json({error: "Not cats!"});
+        console.error("Error fetching data.", error)
+    }
+   
 }

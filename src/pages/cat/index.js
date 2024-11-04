@@ -9,10 +9,12 @@ import { useEffect, useState } from 'react';
 export default function Cat() {
     //Step 3: Set cat data with useState instead of hardcoded data
     const [cat, setCat] = useState({});
+
+    // const url = "https://cats-cats-cats-demo.deno.dev/cats/siamese";
+    const url = "/api/cats"
     //Step 1: Put a function INSIDE your component that fetches
     async function fetchCat() {
-        // const url = "https://cats-cats-cats-demo.deno.dev/cats/siamese";
-        const url = "/api/cats"
+       
         const result = await fetch(url);
         const data = await result.json();
         console.log(data);
@@ -30,7 +32,7 @@ export default function Cat() {
             <Header />
             <CatImage 
                 name={cat.name}
-                image_link={cat.img} />
+                image_link={cat.image} />
             <CatDetails 
                 origin={cat.origin}
                 length={cat.length}
