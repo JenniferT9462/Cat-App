@@ -139,3 +139,35 @@ This project aims to significantly expand the functionality and data richness of
 
 ![Ravelry API](<./public/ravelryApi.png>)
 
+## Roadblocks/Challenges
+
+### Overcame
+
+- The Image component - built-in props to set dimensions. Import Image component from React. Used `<Image/>` instead of `<img>` tags.
+
+- The Link component - import it from React to fix errors I saw when deploying on Vercel. Used `<Link/>` instead of `<a>` tags.
+
+- Errors and Warnings on Vercel - Warning about alt props for images for the Image component. The apostrophe error on Vercel to fix I changed the apostrophe with '&apos;' to fix the error.
+
+- Domain names from where the images in my app were coming from  - For all images I added:
+
+        images: {
+           domains: [
+                'api-ninjas.com', 
+                'raw.githubusercontent.com', 
+                'images4-g.ravelrycache.com', 
+                'images4-f.ravelrycache.com'
+                ], 
+        }
+
+  * Added to the 'next.config.mjs' file. 
+
+### Current Roadblocks/Errors
+
+- Errors with the api/trivia route - 500 error & hydration error, works on postman, It fetches the questions, answers and renders.
+
+- Errors with the api/cats route - Specifically the image. 
+
+  * Error: 
+        Image is missing required "src" property: 
+        
