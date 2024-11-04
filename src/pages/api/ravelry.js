@@ -21,7 +21,7 @@ async function fetchFromRavelry(queryPattern) {
 export default async function handler(req, res) {
     // const query = req.query;
     // console.log(query);
-    const data = await fetchFromRavelry("Halloween Hats");
+    const data = await fetchFromRavelry("Socks");
     console.log(data);
     res.status(200).json({
         name: data.patterns[0].name,
