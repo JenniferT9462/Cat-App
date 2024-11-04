@@ -164,7 +164,7 @@ This project aims to significantly expand the functionality and data richness of
 
 ### Current Roadblocks/Errors
 
-- Errors with the api/trivia route - 500 error & hydration error, works on postman, It fetches the questions, answers and renders.
+- Errors with the api/trivia route - 500 error & hydration error, works on postman, It still fetches the questions, answers and renders after a few tries. So, I still get a 500 error before I eventually get a 200 code. 
 
 - Errors with the api/cats route - Specifically the image. 
 
