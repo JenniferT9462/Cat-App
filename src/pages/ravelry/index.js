@@ -25,16 +25,17 @@ export default function Ravelry() {
     return (
         <div className='bg-amber-100'>
             <Header/>
-        <div className="text-black">
-            <h1>Knitting Pattern Details</h1>
-            <p>Name: {patternData.name}</p>
+            <h1 className='text-4xl text-amber-600 text-center mt-10'>Pattern of the Day!</h1>
+        <div className="text-black bg-white shadow-md rounded-md p-6 w-96 mx-auto mt-10">
+            <h1 className='text-2xl'>Knitting Pattern Details</h1>
+            <p className='text-xl'>Name: {patternData.name}</p>
             <Image
                     src={patternData.image} 
                     alt={patternData.name} 
                     width={300}
                     height={300}
             />
-            <p>Designer: {patternData.designer}</p>
+            <p className='text-xl'>Designer: {patternData.designer}</p>
         </div>
         </div>
           
