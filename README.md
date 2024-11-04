@@ -147,7 +147,7 @@ This project aims to significantly expand the functionality and data richness of
 
 - The Link component - import it from React to fix errors I saw when deploying on Vercel. Used `<Link/>` instead of `<a>` tags.
 
-- Errors and Warnings on Vercel - Warning about alt props for images for the Image component. The apostrophe error on Vercel to fix I changed the apostrophe with '&apos;' to fix the error.
+- Errors and Warnings on Vercel - Warning about alt props for images for the Image component. The apostrophe error on Vercel to fix I changed the apostrophe with `&apos;` to fix the error.
 
 - Domain names from where the images in my app were coming from  - For all images I added:
 
