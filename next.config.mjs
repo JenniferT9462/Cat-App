@@ -8,6 +8,8 @@ const nextConfig = {
       ['raw.githubusercontent.com'],
     domains: 
       ['images4-g.ravelrycache.com', 'images4-f.ravelrycache.com'],// Add the hostname here
+    domains: 
+      ['api-ninjas.com'], 
   }
 };
 
