@@ -23,15 +23,18 @@ export default function Trivia() {
     }
 
     return (
-        <div>
+        <div className='bg-amber-100'>
             <Header/>
-            <h1>Animal Trivia!</h1>
-            {triviaData.map((question, index) =>(
-                <div key={index}>
-                    <p>Question: {question.trivia}</p>
-                    <p>Answer: {question.answer}</p>
-                </div>
-            ))}
+            <div className="text-black">
+                <h1>Animal Trivia!</h1>
+                {triviaData.map((question, index) =>(
+                    <div key={index}>
+                        <p>Question: {question.trivia}</p>
+                        <p>Answer: {question.answer}</p>
+                    </div>
+                ))}
+            </div>
+            
         </div>
     );
 }

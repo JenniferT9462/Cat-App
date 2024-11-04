@@ -23,16 +23,18 @@ export default function Pokemon() {
     }
 
     return (
-        <div>
+        <div className='bg-amber-100'>
             <Header/>
-            <h1>Pokemon Data</h1>
-            <p>Name: {pokemonData.pokemonName}</p>
-            <Image 
-                src={pokemonData.pokemonImgSrc} 
-                alt={pokemonData.pokemonName} 
-                width={300}
-                height={300}
-            />
+            <div className="text-black">
+                <h1>Pokemon Data</h1>
+                <p>Name: {pokemonData.pokemonName}</p>
+                <Image 
+                    src={pokemonData.pokemonImgSrc} 
+                    alt={pokemonData.pokemonName} 
+                    width={300}
+                    height={300}
+                />
+            </div>
         </div>
     );
 }
