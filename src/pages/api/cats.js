@@ -11,18 +11,18 @@ async function fetchNinjasCats(searchCat) {
 
 
 export default async function handler(req, res) {
-    const query = req.query;
-    console.log(query);
+    const searchQuery = req.query;
+    console.log(searchQuery);
     try {
-        const cats = await fetchNinjasCats("co");
-        console.log(cats);
+        const cat = await fetchNinjasCats(searchQuery);
+        console.log(cat);
 
         const responseData = {};
-        if (cats.length > 0) {
-            responseData.name = cats[0].name;
-            responseData.origin = cats[0].origin;
-            responseData.length = cats[0].length;
-            responseData.image = cats[0].image_link;
+        if (cat.length > 0) {
+            responseData.name = cat[0].name;
+            responseData.origin = cat[0].origin;
+            responseData.length = cat[0].length;
+            responseData.image = cat[0].image_link;
     } else {
         responseData.error = "No Cats Found!";
     }
