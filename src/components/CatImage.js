@@ -6,17 +6,24 @@ export default function CatImage(props) {
     return (
       <div className="text-black m-12">
           <div className=" flex justify-center">
-            <div >
-              <Image 
-                className="rounded-full" 
-                width={340}
-                height={340} 
-                src={props.image_link} 
-                alt="Cat" 
-                //priority prop to make image load quickly
-                priority
+            <div>
+              {props.image ? (
+                <Image 
+                  className="rounded-full" 
+                  width={340}
+                  height={340} 
+                  src={props.image} 
+                  alt={`Cat image of ${props.name}`} 
+                  //priority prop to make image load quickly
+                  priority
                 />
-              <h4 className="text-center text-xl font-bold">Hi I&apos;m a {props.name}!</h4>
+              ) : (
+                <p>Image not available</p>
+              )}
+              <h4 className="text-center text-xl font-bold">
+                {props.name ? `Hi I am a ${props.name}!` : "Cat"}
+                {/* {Hi I&apos;m a {props.name}! */}
+              </h4>
             </div>
           </div>
       </div>
