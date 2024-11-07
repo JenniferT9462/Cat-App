@@ -21,7 +21,7 @@ export default async function handler(req, res) {
     //     return res.status(400).json({ error: 'Missing "name" query parameter' });
     // }
     try {
-        const cat = await fetchNinjasCat('co');
+        const cat = await fetchNinjasCat(name);
         console.log(cat);
         if(!cat || cat.length === 0) {
             return res.status(400).json({ error: 'Cat not found' })
