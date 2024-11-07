@@ -17,11 +17,11 @@ async function fetchNinjasCat(catQuery) {
 export default async function handler(req, res) {
     const { name } = req.query;
 
-    if(!name) {
-        return res.status(400).json({ error: 'Missing "name" query parameter' });
-    }
+    // if(!name) {
+    //     return res.status(400).json({ error: 'Missing "name" query parameter' });
+    // }
     try {
-        const cat = await fetchNinjasCat(name);
+        const cat = await fetchNinjasCat('co');
         console.log(cat);
         if(!cat || cat.length === 0) {
             return res.status(400).json({ error: 'Cat not found' })
