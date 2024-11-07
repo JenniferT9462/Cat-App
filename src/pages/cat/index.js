@@ -14,7 +14,7 @@ export default function Cat() {
     //Step 3: Set cat data with useState instead of hardcoded data
     const [cat, setCat] = useState({});
     //Define searchTerm...Represent the state in memory using useState
-    const [searchTerm, setSearchTerm] = useState('');
+    const [searchTerm, setSearchTerm] = useState('co');
     const [error, setError] = useState(null);
 
     //Step 1: Put a function INSIDE your component that fetches
